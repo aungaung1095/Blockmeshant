@@ -113,7 +113,7 @@ function deploy_node() {
 
     mkdir -p "$INSTALL_DIR/target/release"
     echo "📥 Downloading BlockMesh CLI..."
-    curl -sL https://github.com/block-mesh/block-mesh-monorepo/releases/download/v0.0.426/block-mesh-manager-api-x86_64-unknown-linux-gnu.tar.gz -o "$INSTALL_DIR/blockmesh-cli.tar.gz"
+    curl -sL https://github.com/block-mesh/block-mesh-monorepo/releases/download/v0.0.426/block-mesh-manager-worker-x86_64-unknown-linux-gnu.tar.gz -o "$INSTALL_DIR/blockmesh-cli.tar.gz"
     tar -xzf "$INSTALL_DIR/blockmesh-cli.tar.gz" --strip-components=3 -C "$INSTALL_DIR/target/release"
 
     if [[ ! -f "$INSTALL_DIR/target/release/blockmesh-cli" ]]; then
